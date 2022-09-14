@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+main {
+    width:20%;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1rem;
+    border-radius: 10px 10px;
+    transition: 0.4s;
+}
+.img-container {
+    width:100%;
+}
+.img-container img {
+    border-radius: 10px 10px;
+    margin-bottom: 1rem;
+}
+footer div {
+    width:10%;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+aside {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+aside div {
+    display: flex;
+    justify-content: space-between;
+}
+aside img {
+    margin-right: 3px;
+}
+h4 {
+    color:white;
+    margin-bottom: 0.8rem;
+}
+.first-text {
+    color: hsl(215, 51%, 70%);
+    font-size: 0.9rem;
+    font-weight: 200;
+    margin-bottom: 0.8rem;
+}
+aside #cyan {
+   color:hsl(178, 100%, 50%);
+   margin-left: 3px;
+}
+aside #blue {
+    color:hsl(215, 51%, 70%);
+    margin-left: 3px;
+}
+.border {
+    border-bottom: 1px solid hsl(215, 32%, 27%) ;
+    margin-bottom: 0.8rem;
+}
+footer {
+    display: flex;
+}
+footer p {
+    color:hsl(215, 51%, 70%);
+    font-size: 0.9rem;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+span {
+    color:white;
+}
+#ethereum {
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-duration: 0.1s;
+    transition: 0.5s;
+}
+main:hover {
+    transform: scale(1.2);
+}
+.attribution {
+  color:white;
+}
+a {
+    color: gray;
+}
+@keyframes spin {
+  0%{transform:rotateY(0deg);}
+  100%{transform:rotateY(360deg);}
+}
+
+@media screen and (max-width: 780px){
+    section {
+        padding: 2rem;
+    }
+    main {
+        width:100%;
+    }
+}
